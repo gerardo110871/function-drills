@@ -36,10 +36,11 @@ console.log(jsNinja())
   Call the function, passing in an argument.
 */
 
-// const printName = (name) => {
-//   console.log(name)
-// }
+const printName = (name) => {
+  console.log(name)
+}
 
+console.log(printName("cameron"))
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
