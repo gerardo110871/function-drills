@@ -16,6 +16,7 @@ const helloWorld = () => {
 }
 helloWorld()
 
+
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -29,6 +30,7 @@ const jsNinja = () => {
 
 console.log(jsNinja())
 
+
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -41,6 +43,7 @@ const printName = (name) => {
 }
 
 console.log(printName("cameron"))
+// printName('cameron')
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -53,16 +56,22 @@ console.log(printName("cameron"))
 */
 
 //CODE HERE
+// function greeting(name) {
+//   let name2 = name.toString()
+//   return name2
+// }
+
+// greeting("hello", 12)
+
+// // console.log(greeting(12))
+// // console.log(typeof greeting(12))
+
 function greeting(name) {
   let name2 = name.toString()
-  return name2
+  return `Hello, ${name2}`
 }
-
-greeting(12)
-
-console.log(greeting(12))
-console.log(typeof greeting(12))
-
+console.log(greeting("jake"))
+console.log(typeof(greeting(12)))
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -82,7 +91,7 @@ const compareNums = (num1, num2) =>{
     return num2
   }
 }
-console.log(compareNums(4,4))
+console.log(compareNums(5,4))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -167,20 +176,32 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-const nameCheck = (name3) =>{
-  if (name3 === "Steven"){
-    return "Whats is up Steven"
-  }
-  else if (name3 === "Bryan"){
-    return "Hey Brian"
-  }
-  else{
-    return `cool name ${name3}`
-  }
-}
-let nameGreeting = nameCheck("eli")
-console.log(nameGreeting)
+// const nameCheck = (name3) =>{
+//   if (name3 === "Steven"){
+//     return "Whats is up Steven"
+//   }
+//   else if (name3 === "Bryan"){
+//     return "Hey Bryan"
+//   }
+//   else{
+//     return `cool name ${name3}`
+//   }
+// }
+// // let nameGreeting = nameCheck("eli")
+// // console.log(nameGreeting)
 
+function nameCheck(name0) {
+  if (name0 === "Steven")
+  return 'What is up Steven?'
+if(name0 === "Bryan")
+  return 'Hey Bryan'
+
+  return `Cool name, ${name0}`
+} 
+  
+console.log(nameCheck("Steven"))
+console.log(nameCheck("Bryan"))
+console.log(nameCheck("Gerardo"))
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -210,6 +231,11 @@ if (color === "black") {
 const colorRating = faveColorFinder("green")
 console.log(colorRating)
 
+const colorname = faveColorFinder("black")
+console.log(colorname)
+
+const outSider = faveColorFinder("blue")
+console.log(outSider)
 
 
 
@@ -247,7 +273,7 @@ const thatsOdd = (aNumber) => {
   }
 }
 
-const oddChecker = thatsOdd(5)
+const oddChecker = thatsOdd(4)
 console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -260,7 +286,7 @@ console.log(oddChecker)
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-const bestMovie = (movieTitle, movie2) => {return `${movieTitle} is the best movie ever`}
+const bestMovie = (movieTitle) => {return `${movieTitle} is the best movie ever`}
 console.log(bestMovie("sharknado"))
 
 
